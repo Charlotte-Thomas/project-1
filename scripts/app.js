@@ -87,24 +87,30 @@ function setupGame() {
   document.addEventListener('keydown', (e) => {
     if (e.keyCode === 32) {
       spacebarButton.classList.add('hover')
+      spacebarButton.classList.add('hvr-radial-outPress')
       spacebarButton.innerHTML = 'Shoots Bullet'
     }
     if (e.keyCode === 65) {
       aButton.classList.add('hover')
+      aButton.classList.add('hvr-sweep-to-rightPress')
       aButton.innerHTML = 'Move left'
     }
     if (e.keyCode === 68) {
       dButton.classList.add('hover')
+      dButton.classList.add('hvr-sweep-to-rightPress')
       dButton.innerHTML = 'Move right'
     }
   })
 
   document.addEventListener('keyup', () => {
     spacebarButton.classList.remove('hover')
+    spacebarButton.classList.remove('hvr-radial-outPress')
     spacebarButton.innerHTML = 'Spacebar'
     aButton.classList.remove('hover')
+    aButton.classList.remove('hvr-sweep-to-rightPress')
     aButton.innerHTML = 'A'
     dButton.classList.remove('hover')
+    dButton.classList.remove('hvr-sweep-to-rightPress')
     dButton.innerHTML = 'D'
   })
 
