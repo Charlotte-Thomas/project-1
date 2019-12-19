@@ -250,8 +250,8 @@ h2 {
   justify-content: flex-start;
   flex-direction: column;
   width: 700px;
-  height: 500px;
-  margin-top: 50px;
+  height: 550px;
+  margin-top: 80px;
   position: absolute;
   background:  rgba(212, 165, 172, 0.89);
   border: 10px solid rgb(110, 49, 77);
@@ -277,7 +277,7 @@ h3 {
 #countDown {
   display: none;
   font-size: 90px;
-  margin-top: 9px;
+  margin-top: 0px;
 }
 
 #wave {
