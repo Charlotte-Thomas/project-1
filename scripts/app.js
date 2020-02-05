@@ -315,6 +315,7 @@ function setupGame() {
   let runTime = 0
   let waveSize = 3
 
+  // function allows aliens to be added on the correct side of the grid depending on current alien formation position
   function addAliens() {
     if (runTime < waveSize) {
       topRow.forEach((position) => {
