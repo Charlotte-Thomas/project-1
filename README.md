@@ -123,7 +123,7 @@ If the movement is down then depending on the current wave, more aliens will be 
 Previously I had the aliens continuously moving one direction until the far right or left column were occupied. However, this ended up causing problems such as aliens completely disappearing when moving left.
 
 ### Bullets & Bombs
-Both bullets and bombs utilised very similar movement logic whereby an array or arrays was used in order for functions to continue on bullets/bombs that were still in movement. It also allowed for multiple bullets/bombs to be shot at once rather than waiting each to run it's course through the grid first.
+Both bullets and bombs utilised very similar movement logic whereby an array of arrays was used in order for functions to continue on bullets/bombs that were still in movement. It also allowed for multiple bullets/bombs to be shot at once rather than waiting each to run it's course through the grid first.
 
 movement functions were also placed in a set interval and a set timeout was used in order to clear the interval when the bullet or bomb had reached the end of the grid.
 
@@ -159,7 +159,7 @@ What detemined how many bombs could be dropped at any one time was defined in th
 
 ### Collisions
 
-collision logic for both bombs and bullets was incorporated into the setInterval of their movement function. An if statement was used to check if the cell which had the bullet / bomb also had the className of alien / ship. If so, then all classNames were removed and an explosion class was added for a time.
+Collision logic for both bombs and bullets was incorporated into the setInterval of their movement function. An if statement was used to check if the cell which had the bullet / bomb also had the className of alien / ship. If so, then all classNames were removed and an explosion class was added for a time.
 
 If an alien is hit by a bullet, the player gains 1 point. However, if the player's ship is hit by a bomb they will loose 1 life (out of 3).
 
