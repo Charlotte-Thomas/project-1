@@ -13,7 +13,7 @@ This was a **week-long solo project**.
 
 
 <p align="center">
-  <img width="600" height="600" src="https://media.giphy.com/media/fuQ7CXvE4cloi8AooU/giphy.gif">
+  <img width="400" height="400" src="https://media.giphy.com/media/fuQ7CXvE4cloi8AooU/giphy.gif">
 </p>
 
 ## Brief
