@@ -172,6 +172,10 @@ If an alien is hit by a bullet, the player gains 1 point. However, if the player
 
 ### Game Over & Waves 
 
+<p align="center">
+  <img src="https://i.imgur.com/L1ZTVVy.png">
+</p>
+
 Once the player looses all their lives, the game is over and they loose 30 points. If the player manages to destroy all the aliens before they reach the bottom row, the wave is won.
 
 If the player looses, the next game will be on the same wave level. However, if the player wins the round, they will move onto the next wave and the game will become more difficult.
