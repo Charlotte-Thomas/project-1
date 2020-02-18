@@ -1,5 +1,7 @@
 # Project-1: Space Invaders
 
+### ![](https://cloud.githubusercontent.com/assets/40461/8183776/469f976e-1432-11e5-8199-6ac91363302b.png) General Assembly, Software Engineering Immersive
+
 ## Overview
 Link to the game on [GitHub Pages](https://charlotte-thomas.github.io/project-1/)
 
@@ -7,7 +9,12 @@ The first project tasked to us by General Assembly was to render a grid-based re
 
 Space Invaders is a classic arcade game from the 80s. The player aims to shoot the invading wave of aliens, before it reaches the planet's surface.
 
-This was a **week-long solo project**.
+This was a **week-long solo project**. 
+
+
+
+![](https://media.giphy.com/media/fuQ7CXvE4cloi8AooU/giphy.gif)
+
 
 ## Brief
 For this particular game, there were two mandatory requirements which needed to be met in order to create the MVP. 
