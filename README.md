@@ -123,9 +123,9 @@ If the movement is down then depending on the current wave, more aliens will be 
 Previously I had the aliens continuously moving one direction until the far right or left column were occupied. However, this ended up causing problems such as aliens completely disappearing when moving left.
 
 ### Bullets & Bombs
-Both bullets and bombs utilised very similar movement logic whereby an array of arrays was used in order for functions to continue on bullets/bombs that were still in movement. It also allowed for multiple bullets/bombs to be shot at once rather than waiting each to run it's course through the grid first.
+Both bullets and bombs utilised very similar movement logic whereby an array of arrays was used in order for functions to continue on bullets/bombs that were still in movement. It also allowed for multiple bullets/bombs to be shot at once rather than waiting for each to run it's course through the grid first.
 
-movement functions were also placed in a set interval and a set timeout was used in order to clear the interval when the bullet or bomb had reached the end of the grid.
+Movement functions were also placed in a set interval and a set timeout was used in order to clear the interval when the bullet or bomb had reached the end of the grid.
 
 Switch statement to shoot a bullet (shown previously):
 
@@ -155,42 +155,54 @@ The initiation of the bomb drop was slightly more complex as it incorporated ran
 
 Randomisation was used in order to make sure that it wasn't the same aliens dropping bombs. Additionally only the very bottom row of aliens were allowed to drop a bomb. This was done by checking that the alien who was chosen randomly to drop a bomb didn't have a cell in front of it with a className of 'alien'. 
 
-What detemined how many bombs could be dropped at any one time was defined in the wave (difficulty level). 
+What determined how many bombs could be dropped at any one time was defined in the wave (difficulty level). 
 
 ### Collisions
 
 Collision logic for both bombs and bullets was incorporated into the setInterval of their movement function. An if statement was used to check if the cell which had the bullet / bomb also had the className of alien / ship. If so, then all classNames were removed and an explosion class was added for a time.
 
-If an alien is hit by a bullet, the player gains 1 point. However, if the player's ship is hit by a bomb they will loose 1 life (out of 3).
+If an alien is hit by a bullet, the player gains 1 point. However, if the player's ship is hit by a bomb they will loose 1 life (out of 3). The player also looses a life if an alien reaches the bottom row.
 
-### Waves 
+### Game Over & Waves 
 
-### Game Over / Win
-- -30 points for loss
-- loss = same wave (repeated)
-- win = next wave + more difficult
+Once the player looses all their lives, the game is over and they loose 30 points. If the player manages to destroy all the aliens before they reach the bottom row, the wave is won.
 
-## Wins & Blockers
-Bugs / difficult features fixed:    
+If the player looses, the next game will be on the same wave level. However, if the player wins the round, they will move onto the next wave and the game will become more difficult.
 
-- Random aliens and bullets not being removed
-- One bullet shot at a time
-- If all aliens hit on one side whilst direction is 'down', the aliens would continuously move down
-- Alien movement
+Difficulty is increased by:   
+1. Increased number of bombs will be dropped at once (+1).   
+2. More aliens will appear (+1 row).
+
+## Wins & Blockers  
+Some of the more challenging features of the game included:   
+ 
+* Alien movement - where aliens were dissapearing (as mentioned in Alien section above).
+* Ability for multiple bullets to be fired at once.
+
+Bug found:
+
+- Some alien classes not being removed after collision.  
+*For this I had to have a function that sweeped through the cells and remove the classes in the cells that the alien array did not include.*
+
+- If all the aliens were removed on one side-column whilst direction was 'down', the aliens would continuously move down.
+
 
 ## Future Features 
- features I added after:  
- - Start page animations   
- - Designed my own png images for aliens and bullets
 
- features I want to implement:  
- - Saved high-score on local storage   
- - Character image choice   
- - Make it mobile friendly / very large screen friendly
+**Features I added after the project week was over:**
+    
+-  Start page animations.   
+-  Designed my own png images for aliens and bullets.
+
+**Features I would like to implement in the future include:**
+
+ - Saved high-score on local storage.  
+ - Selection of ship image choices. 
+ - Make it mobile friendly / very large screen friendly.
  
 ## Skills Learned
 
-- Neat and logically sectioned code
-- What can be achieved with the fundamentals of computer languages
-- By seeing other classmates versions I could see that there are many different ways to achieve the same outcomes
+- Neat and logically sectioned code.
+- What can be achieved with just the fundamentals of a few computer languages.
+- By seeing other classmates versions of the game I could see that there were many different ways to achieve the same outcomes.
 - That styling makes a BIG difference to the perception of an app.
