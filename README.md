@@ -15,6 +15,7 @@ This was a **week-long solo project**.
 
 ![](https://media.giphy.com/media/fuQ7CXvE4cloi8AooU/giphy.gif)
 
+![GameGif](https://media.giphy.com/media/fuQ7CXvE4cloi8AooU/giphy.gif?style=centerme)
 
 ## Brief
 For this particular game, there were two mandatory requirements which needed to be met in order to create the MVP. 

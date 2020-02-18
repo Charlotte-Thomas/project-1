@@ -564,3 +564,8 @@ h3 {
           animation: slide-rotate-hor-bottom 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.8s reverse both;
   margin-top: -5%;
 }
+
+img[src$="centerme"] {
+  display:block;
+  margin: 0 auto;
+}
