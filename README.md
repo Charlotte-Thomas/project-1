@@ -12,11 +12,8 @@ Space Invaders is a classic arcade game from the 80s. The player aims to shoot t
 This was a **week-long solo project**. 
 
 
-
-![](https://media.giphy.com/media/fuQ7CXvE4cloi8AooU/giphy.gif)
-
 <p align="center">
-  <img width="600" height="200" src="https://media.giphy.com/media/fuQ7CXvE4cloi8AooU/giphy.gif">
+  <img width="600" height="600" src="https://media.giphy.com/media/fuQ7CXvE4cloi8AooU/giphy.gif">
 </p>
 
 ## Brief
