@@ -25,12 +25,13 @@ These were:
 2. The player's score should be displayed at the end of the game.
 
 Other features of the game include:
-Being able to move the player ship left and right 
-ability to shoot and destroy aliens with bullets 
-for aliens to drop bombs which can hit the player and remove lives 
-for aliens to move in the classic style, whereby, they all move in synchonocity until they reach the edge of the grid and then they move down one grid-space before moving the opposite way across the gid.
-lives to be lost when aliens reach the bottom level of the grid.
-For the game a game over feature to appear if all lives are lost and a winning message to appear if the wave of aliens is defeated.
+
+* Being able to move the player ship left and right 
+* The Ability to shoot and destroy aliens with bullets.
+* For aliens to drop bombs which can hit the player and remove lives .
+* For aliens to move in the classic style, whereby, they all move in synchonocity until they reach the edge of the grid and then they move down one grid-space before moving the in opposite direction across the gid.
+* Lives to be lost when aliens reach the bottom level of the grid.
+* For a game over feature to appear if all lives are lost and a winning message to appear if the wave of aliens is defeated.
 
 
 
