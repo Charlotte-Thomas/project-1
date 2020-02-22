@@ -25,22 +25,13 @@ These were:
 2. The player's score should be displayed at the end of the game.
 
 Other features of the game include:
-<<<<<<< HEAD
 
-* Being able to move the player ship left and right 
+* Ability to move the player ship left and right.
 * The Ability to shoot and destroy aliens with bullets.
-* For aliens to drop bombs which can hit the player and remove lives .
-* For aliens to move in the classic style, whereby, they all move in synchonocity until they reach the edge of the grid and then they move down one grid-space before moving the in opposite direction across the gid.
-* Lives to be lost when aliens reach the bottom level of the grid.
+* For aliens to drop bombs which can hit the player and remove lives.
+* For aliens to move in the classic style, whereby, they all move in synchonocity until they reach the edge of the grid and then they move down one grid-space before moving in the opposite direction across the gid.
+* Loss of a life when an alien reaches the bottom level of the grid.
 * For a game over feature to appear if all lives are lost and a winning message to appear if the wave of aliens is defeated.
-=======
-Being able to move the player ship left and right 
-ability to shoot and destroy aliens with bullets 
-for aliens to drop bombs which can hit the player and remove lives 
-for aliens to move in the classic style, whereby, they all move in synchonocity until they reach the edge of the grid and then they move down one grid-space before moving the opposite way across the gid.
-lives to be lost when aliens reach the bottom level of the grid.
-For a game over feature to appear if all lives are lost and a winning message to appear if the wave of aliens is defeated.
->>>>>>> ed45c744c441c293d9bbc1ce631308135879e9b7
 
 
 
@@ -135,14 +126,14 @@ For every single cell movement, a number of if statments are run in order to det
 	  }
 A switch statement was then used to provide the logic for the removal and addition of the alien classes depending on the direction.
 
-If the movement is down then depending on the current wave, more aliens will be added to the grid at the top.
+If the movement is down, then depending on the current wave, more aliens will be added to the grid at the top.
 
 Previously I had the aliens continuously moving one direction until the far right or left column were occupied. However, this ended up causing problems such as aliens completely disappearing when moving left.
 
 ### Bullets & Bombs
-Both bullets and bombs utilised very similar movement logic whereby an array of arrays was used in order for functions to continue on bullets/bombs that were still in movement. It also allowed for multiple bullets/bombs to be shot at once rather than waiting for each to run it's course through the grid first.
+Both bullets and bombs utilised very similar movement logic whereby an array of arrays was used in order for functions to continue running on bullets/bombs that were still in movement. It also allowed for multiple bullets/bombs to be shot at once rather than waiting for each to run it's course through the grid first.
 
-Movement functions were also placed in a set interval and a set timeout was used in order to clear the interval when the bullet or bomb had reached the end of the grid.
+Movement functions were placed in a set interval and a set timeout was used in order to clear the interval when the bullet or bomb had reached the end of the grid.
 
 Switch statement to shoot a bullet (shown previously):
 
@@ -168,11 +159,11 @@ Bullet movement logic:
 	  	}, 50)
 	}
 
-The initiation of the bomb drop was slightly more complex as it incorporated randomisation, number of bombs able to be dropped at any one time and which aliens were able to drop a bomb.
+The initiation of the bomb drop was slightly more complex as it incorporated randomisation, the number of bombs able to be dropped at any one time and which aliens were able to drop a bomb.
 
-Randomisation was used in order to make sure that it wasn't the same aliens dropping bombs. Additionally only the very bottom row of aliens were allowed to drop a bomb. This was done by checking that the alien who was chosen randomly to drop a bomb didn't have a cell in front of it with a className of 'alien'. 
+Randomisation was used in order to make sure that it wasn't the same aliens dropping bombs. Additionally only the very bottom row of aliens were allowed to drop a bomb. This was done by checking that the chosen alien didn't have a cell in front of it with a class of 'alien'. 
 
-What determined how many bombs could be dropped at any one time was defined in the wave (difficulty level). 
+The wave (difficulty level) determined how many bombs could be dropped at any one time.
 
 ### Collisions
 
@@ -191,7 +182,7 @@ Once the player looses all their lives, the game is over and they loose 60 point
 If the player looses, the next game will be on the same wave level. However, if the player wins the round, they will move onto the next wave and the game will become more difficult.
 
 Difficulty is increased by:   
-1. Increased number of bombs will be dropped at once (+1).   
+1. Increased number of bombs that can be dropped at once (+1).   
 2. More aliens will appear (+1 row).
 
 ## Wins & Blockers  
@@ -200,7 +191,7 @@ Some of the more challenging features of the game included:
 * Alien movement - where aliens were dissapearing (as mentioned in Alien section above).
 * Ability for multiple bullets to be fired at once.
 
-Bug found:
+Bugs found & fixed:
 
 - Some alien classes not being removed after collision.  
 *For this I had to have a function that sweeped through the cells and remove the classes in the cells that the alien array did not include.*
