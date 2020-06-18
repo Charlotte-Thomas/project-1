@@ -46,7 +46,7 @@ function setupGame() {
 
   spacebarButton.addEventListener('mouseover', () => {
     spacebarButton.classList.add('hover')
-    spacebarButton.innerHTML = 'Shoots Bullet'
+    spacebarButton.innerHTML = 'Shoot Bullet'
   })
   spacebarButton.addEventListener('mouseout', () => {
     spacebarButton.classList.remove('hover')
@@ -88,7 +88,7 @@ function setupGame() {
     if (e.keyCode === 32) {
       spacebarButton.classList.add('hover')
       spacebarButton.classList.add('hvr-radial-outPress')
-      spacebarButton.innerHTML = 'Shoots Bullet'
+      spacebarButton.innerHTML = 'Shoot Bullet'
     }
     if (e.keyCode === 65) {
       aButton.classList.add('hover')
